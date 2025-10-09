@@ -7,8 +7,6 @@ export default class extends Controller {
     this.isOpen = false
     this.updateIcons()
     this.setupEventListeners()
-
-    console.log("menusssssssssssssssss")
   }
 
   disconnect() {
