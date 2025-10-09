@@ -104,7 +104,4 @@ module ApplicationHelper
     "<ul class='list-disc list-inside space-y-1'>#{items.join}</ul>".html_safe
   end
 
-  def logostyle
-     
-  end
 end
