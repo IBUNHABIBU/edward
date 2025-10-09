@@ -1,4 +1,4 @@
-<nav class="bg-stone-800 shadow-lg">
+<nav class="bg-stone-800 shadow-lg" data-controller="mobile-menu">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between">
       <div class="flex items-center">
@@ -105,10 +105,7 @@
           <% if user_signed_in? && (current_user.admin? || current_user.super_admin?) %>
             <%= link_to "Users", users_path, class: "bg-green-600 text-white hover:bg-green-700 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200" %>
           <% end %>
-        <% else %>
-          <%= link_to "Login", new_user_session_path, class: "text-stone-300 hover:bg-stone-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200" %>
-          <%= link_to "Sign Up", new_user_registration_path, class: "bg-orange-600 text-white hover:bg-orange-700 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200" %>
-        <% end %>
+     <% end %>
       </div>
     </div>
   </div>
