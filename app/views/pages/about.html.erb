@@ -1,31 +1,34 @@
-<!-- app/views/pages/about.html.erb -->
-<section class="relative bg-green-800 text-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
-    <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+<!-- Hero Section -->
+<section class="relative py-20 bg-stone-900 overflow-hidden">
+  <div class="absolute inset-0">
+    <%= image_tag "lions2.jpg", alt: "Team hiking in mountains", class: "w-full h-full object-cover opacity-40" %>
+  </div>
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">
       Our Story
     </h1>
-    <p class="mt-6 max-w-3xl mx-auto text-xl text-amber-100">
+    <p class="text-xl md:text-2xl text-stone-200">
       Crafting unforgettable journeys since 2010
     </p>
   </div>
-  <%= image_tag "lions2.jpg", class: "w-full h-64 object-cover", alt: "Team hiking in mountains" %>
 </section>
 
 <!-- Vision Section -->
-<section class="py-16 bg-amber-50">
+<section class="py-16 bg-stone-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
-      <div>
-        <div class="border-b-2 border-amber-400 w-20 mb-6"></div>
-        <h2 class="text-3xl font-extrabold text-gray-900 mb-4">
+    <div class="flex flex-col lg:flex-row items-center gap-12">
+      <div class="lg:w-1/2">
+        <h2 class="text-3xl font-extrabold text-stone-900 mb-6">
           Our Vision
         </h2>
-        <p class="text-lg text-gray-700">
+        <p class="text-lg text-stone-700 leading-relaxed">
           To create a world where travel is a transformative force for good—connecting people across cultures, preserving natural wonders, and empowering local communities to thrive through sustainable tourism.
         </p>
       </div>
-      <div class="mt-8 lg:mt-0">
-        <%= image_tag "tembo.jpg", class: "rounded-lg shadow-xl", alt: "Inspiring travel vision" %>
+      <div class="lg:w-1/2">
+        <div class="rounded-2xl overflow-hidden shadow-2xl">
+          <%= image_tag "tembo.jpg", alt: "Inspiring travel vision", class: "w-full h-64 md:h-96 object-cover" %>
+        </div>
       </div>
     </div>
   </div>
@@ -34,73 +37,80 @@
 <!-- Mission Section -->
 <section class="py-16 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
-      <div class="order-2 lg:order-1">
-        <%= image_tag "twigasingle.jpg", class: "rounded-lg shadow-xl", alt: "Our mission in action" %>
-      </div>
-      <div class="order-1 lg:order-2">
-        <div class="border-b-2 border-green-600 w-20 mb-6"></div>
-        <h2 class="text-3xl font-extrabold text-gray-900 mb-4">
+    <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
+      <div class="lg:w-1/2">
+        <h2 class="text-3xl font-extrabold text-stone-900 mb-6">
           Our Mission
         </h2>
-        <p class="text-lg text-gray-700">
+        <p class="text-lg text-stone-700 leading-relaxed">
           To craft authentic, immersive travel experiences that respect local cultures and ecosystems while providing meaningful economic opportunities for communities. We're dedicated to showing travelers the heart and soul of each destination through carefully curated adventures that leave positive impacts.
         </p>
       </div>
+      <div class="lg:w-1/2">
+        <div class="rounded-2xl overflow-hidden shadow-2xl">
+          <%= image_tag "twigasingle.jpg", alt: "Our mission in action", class: "w-full h-64 md:h-96 object-cover" %>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="py-16 bg-white">
-  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <div class="border-b-2 border-amber-400 w-20 mx-auto mb-6"></div>
-    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+<!-- Why We Exist Section -->
+<section class="py-16 bg-orange-50">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl font-extrabold text-stone-900 mb-6">
       Why We Exist
     </h2>
-    <p class="mt-4 text-lg text-gray-600">
-      At Kilimarvellous, we believe travel should transform lives. Our mission is to connect adventurers with authentic, sustainable experiences that respect local cultures and ecosystems.
+    <p class="text-xl text-stone-700 max-w-3xl mx-auto">
+      At Yote Safari, we believe travel should transform lives. Our mission is to connect adventurers with authentic, sustainable experiences that respect local cultures and ecosystems.
     </p>
   </div>
 </section>
 
-<section class="py-16 bg-neutral-light">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">
+<!-- Our Journey Section -->
+<section class="py-16 bg-stone-50">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-extrabold text-stone-900 text-center mb-12">
       Our Journey
     </h2>
-    <div class="space-y-8">
-      <!-- Timeline Item -->
-      <div class="flex flex-col sm:flex-row">
-        <div class="sm:w-1/3 text-right pr-8">
-          <p class="text-amber-600 font-bold">2010</p>
-        </div>
-        <div class="sm:w-2/3 pl-8 border-l-4 border-green-800 pb-8">
-          <h3 class="text-xl font-bold text-gray-900">Founded in Adventure City</h3>
-          <p class="text-gray-600">Started with just 3 local hiking tours and a passion for sharing hidden gems.</p>
+    <div class="flex justify-center">
+      <div class="bg-white rounded-xl shadow-lg p-8 max-w-md border border-stone-200">
+        <div class="flex items-start space-x-4">
+          <div class="flex-shrink-0">
+            <div class="h-16 w-16 bg-green-600 rounded-full flex items-center justify-center">
+              <span class="text-white font-bold text-lg">2010</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-stone-900 mb-2">Founded in Arusha</h3>
+            <p class="text-stone-600">Started with just 3 local hiking tours and a passion for sharing hidden gems.</p>
+          </div>
         </div>
       </div>
-      <!-- Add more timeline items -->
     </div>
   </div>
 </section>
 
-<section class="py-16 bg-white">
+<!-- Team Section -->
+<section id="team" class="py-16 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">
+    <h2 class="text-3xl font-extrabold text-stone-900 text-center mb-12">
       Meet Our Guides
     </h2>
-    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <% @team_members.each do |member| %>
-        <div class="bg-white rounded-lg shadow-md overflow-hidden">
-          <% if member.photo.attached? %>
-            <%= image_tag url_for(member.photo), class: "w-full h-64 object-cover", alt: member.name %>
-          <% else %>
-            <%= image_tag "mavelogo.png", class: "w-full h-64 object-cover", alt: member.name %>
-          <% end %>
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-stone-200">
+          <div class="h-48 overflow-hidden">
+            <% if member.photo.attached? %>
+              <%= image_tag url_for(member.photo), alt: member.name, class: "w-full h-full object-cover" %>
+            <% else %>
+              <%= image_tag "mavelogo.png", alt: member.name, class: "w-full h-full object-cover" %>
+            <% end %>
+          </div>
           <div class="p-6">
-            <h3 class="text-xl font-bold text-gray-900"><%= member.name %></h3>
-            <p class="text-amber-600"><%= member.title %></p>
-            <p class="mt-2 text-gray-600"><%= member.bio %></p>
+            <h3 class="text-xl font-bold text-stone-900 mb-2"><%= member.name %></h3>
+            <p class="text-green-600 font-semibold mb-3"><%= member.title %></p>
+            <p class="text-stone-600"><%= member.bio %></p>
           </div>
         </div>
       <% end %>
@@ -108,63 +118,73 @@
   </div>
 </section>
 
-<section class="py-16 bg-amber-50">
+<!-- Values Section -->
+<section class="py-16 bg-stone-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">
+    <h2 class="text-3xl font-extrabold text-stone-900 text-center mb-12">
       Our Core Values
     </h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       <% @values.each do |value| %>
-        <div class="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition">
-          <div class="mx-auto h-16 w-16 bg-<%= value[:color] %>-100 rounded-full flex items-center justify-center mb-4">
-            <%= value_icon(value[:icon], class: "h-8 w-8 text-#{value[:color]}-600") %>
+        <div class="text-center">
+          <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-orange-100 text-orange-600 mb-4">
+            <%= value_icon(value[:icon]) %>
           </div>
-          <h3 class="text-lg font-medium text-gray-900"><%= value[:title] %></h3>
-          <p class="mt-2 text-gray-600"><%= value[:description] %></p>
+          <h3 class="text-lg font-semibold text-stone-900 mb-2"><%= value[:title] %></h3>
+          <p class="text-stone-600 text-sm"><%= value[:description] %></p>
         </div>
       <% end %>
     </div>
   </div>
 </section>
 
-<section class="py-16 bg-green-800 text-white">
+<!-- Responsible Tourism Section -->
+<section class="py-16 bg-green-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="lg:grid lg:grid-cols-2 lg:gap-8">
-      <div>
-        <h2 class="text-3xl font-extrabold mb-6">
+    <div class="flex flex-col lg:flex-row items-center gap-12">
+      <div class="lg:w-1/2">
+        <h2 class="text-3xl font-extrabold text-stone-900 mb-6">
           Responsible Tourism
         </h2>
-        <p class="text-lg text-green-100">
+        <p class="text-lg text-stone-700 leading-relaxed mb-6">
           We're committed to protecting the places we love. We promote travel that respects local cultures, supports communities, and preserves natural environments for future generations.
         </p>
-        <%= link_to "Learn more", root_path, class: "mt-6 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-green-800 bg-amber-300 hover:bg-amber-400" %>
+        <%= link_to "Learn more", root_path, 
+            class: "inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 shadow-sm transition-colors duration-200" %>
       </div>
-      <div class="mt-12 lg:mt-0">
-        <%= image_tag "comunity.jpg", class: "rounded-lg shadow-xl", alt: "Conservation project" %>
+      <div class="lg:w-1/2">
+        <div class="rounded-2xl overflow-hidden shadow-2xl">
+          <%= image_tag "comunity.jpg", alt: "Conservation project", class: "w-full h-64 md:h-96 object-cover" %>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="mt-12">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Our Business License</h2>
-    <p class="text-gray-600">
+<!-- License Section -->
+<div class="py-16 bg-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl font-extrabold text-stone-900 mb-6">Our Business License</h2>
+    <p class="text-lg text-stone-700 mb-8 max-w-2xl mx-auto">
       We are fully licensed and registered to provide professional safari and trekking services in Tanzania. Here is a copy of our official business license:
     </p>
-
-    <div class="bg-white shadow-md flex justify-center">
-      <%= image_tag "licence.jpg", alt: "Business License", class: "" %>
+    <div class="bg-stone-50 rounded-xl p-8 border border-stone-200 max-w-2xl mx-auto">
+      # <%=  %>
     </div>
+  </div>
 </div>
 
-<section class="py-16 bg-white text-center">
-  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-3xl font-extrabold text-gray-900 mb-6">
+<!-- CTA Section -->
+<section class="py-16 bg-stone-800">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl font-extrabold text-white mb-8">
       Ready to Explore With Us?
     </h2>
-    <div class="mt-8 flex justify-center space-x-4">
-      <%= link_to "Meet Our Guides", "#team", class: "px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-800 hover:bg-green-700" %>
-      <%= link_to "View Tours", travel_tours_path, class: "px-6 py-3 border border-transparent text-base font-medium rounded-md text-green-800 bg-amber-300 hover:bg-amber-400" %>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <%= link_to "Meet Our Guides", "#team", 
+          class: "px-8 py-3 border-2 border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-stone-900 transition-colors duration-200" %>
+      <%= link_to "View Tours", travel_tours_path, 
+          class: "px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 shadow-sm transition-colors duration-200" %>
     </div>
   </div>
 </section>
