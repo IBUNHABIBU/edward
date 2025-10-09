@@ -23,7 +23,6 @@ export default class extends Controller {
     this.isOpen = false
     this.updateMenu()
     this.updateIcons()
-    // this.updateOverlay()
   }
 
   updateMenu() {
@@ -46,13 +45,6 @@ export default class extends Controller {
     }
   }
 
-  // updateOverlay() {
-  //   if (this.isOpen) {
-  //     this.overlayTarget.classList.remove('hidden')
-  //   } else {
-  //     this.overlayTarget.classList.add('hidden')
-  //   }
-  // }
 
   setupEventListeners() {
     this.boundHandleEscape = this.handleEscape.bind(this)
