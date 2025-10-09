@@ -30,8 +30,8 @@ module SafarisHelper
     return "" if input.blank?
 
     input.lines.map do |line|
-      if line =~ /(Day\s+\d+:)(.*)/
-        day = "<span class='font-bold underline'>#{$1.strip}</span>"
+      if line =~ /(Day\s+\d+:)(.*)/i  # <-- added `i` for case-insensitive
+        day = "<span class='font-bold underline'>#{$1.strip.capitalize}</span>"
         rest = $2.strip
 
         if rest.empty?
