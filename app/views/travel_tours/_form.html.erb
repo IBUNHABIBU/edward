@@ -92,7 +92,8 @@
           <div class="flex items-center space-x-2">
             <div class="w-10 h-10 bg-stone-200 rounded border border-stone-300 overflow-hidden">
               <% if travel_tour.persisted? && travel_tour.image.attached? %>
-                <%= image_tag travel_tour.image, class: "w-full h-full object-cover" %>
+                <%= image_tag travel_tour.image.variant(resize_to_limit: [400, 300]),
+                    loading: "lazy", class: "w-full h-full object-cover" %>
               <% elsif params.dig(:travel_tour, :image).present? %>
                 <div class="w-full h-full flex items-center justify-center bg-amber-100">
                   <span class="text-xs text-amber-700">✓</span>

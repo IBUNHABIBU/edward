@@ -15,7 +15,8 @@
           <div class="group relative bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105">
             <% if destination.image.attached? %>
               <div class="h-64 overflow-hidden">
-                <%= image_tag destination.image, 
+                <%= image_tag destination.image.variant(resize_to_limit: [400, 300]),
+                    loading: "lazy", 
                     class: "w-full h-full object-cover transition-transform duration-500 group-hover:scale-110", 
                     alt: destination.name %>
               </div>
